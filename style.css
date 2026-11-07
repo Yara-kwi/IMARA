@@ -253,3 +253,38 @@ h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin-top: 1rem; }
     font-size: 15px;
   }
 }
+
+/* ===== FIX MOBILE NAVBAR BUTTONS ===== */
+@media screen and (max-width: 768px) {
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .nav-buttons .btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+    width: auto;
+    min-width: 0;
+    border-radius: 30px;
+  }
+
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .menu-btn {
+    flex-shrink: 0;
+  }
+}
