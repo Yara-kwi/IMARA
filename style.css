@@ -190,3 +190,66 @@ h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin-top: 1rem; }
   .features, .cards { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: .5rem; }
 }
+/* ===== TABLET / IPAD ===== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .split {
+    gap: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 92%;
+    margin: auto;
+  }
+
+  .split {
+    flex-direction: column;
+  }
+
+  .split img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .btn {
+    max-width: 100%;
+  }
+}
+
+/* ===== SMALL PHONES ===== */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
