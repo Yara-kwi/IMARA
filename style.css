@@ -288,3 +288,45 @@ h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin-top: 1rem; }
     flex-shrink: 0;
   }
 }
+
+/* ===== MOBILE HEADER ALIGNMENT ===== */
+@media screen and (max-width: 768px) {
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  /* Logo on the left */
+  .header-inner .logo {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+  }
+
+  .header-inner .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Buttons on the right */
+  .nav-buttons {
+    margin-left: auto;
+    gap: 6px;
+  }
+
+  .nav-buttons .btn {
+    padding: 7px 10px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Menu icon */
+  .menu-btn {
+    margin-left: 4px;
+    padding: 0;
+  }
+}
